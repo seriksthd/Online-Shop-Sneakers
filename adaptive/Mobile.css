@@ -1,0 +1,195 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100%;
+    padding: 20px 16px;
+    background-image: url(/assets/images/mobil-nike.png);
+    background-size: 510px;
+    background-repeat: no-repeat;
+    nav,
+    .top-button {
+      display: none;
+    }
+    .burger-menu {
+      display: block;
+    }
+  }
+  .continer-walk {
+    display: none;
+  }
+  .header-section {
+    width: 100%;
+  }
+  .right-bar-head {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+  }
+  .right-bar-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 400;
+      width: 271px;
+      opacity: 0.7;
+      line-height: 150%;
+    }
+  }
+  .bring-row {
+    width: 280px;
+  }
+  .low-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .total-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .three-sneakers {
+    width: 276px;
+    height: 80px;
+  }
+  .container-low {
+    display: flex;
+    justify-content: start;
+    width: 204px;
+    height: 74px;
+    font-weight: bold;
+    font-size: 48px;
+    div,
+    span {
+      font-size: 1rem;
+    }
+  }
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+  }
+  .text-video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mujik {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body {
+    background-color: rgb(241, 243, 240);
+  }
+  .main-div1 {
+    margin-left: 60px;
+    text-align: left;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      width: 300px;
+    }
+  }
+  .box {
+    height: 300px;
+    width: 100%;
+    padding-top: 90px;
+    margin: 0px;
+  }
+  .text {
+    h1 {
+      font-size: 34px;
+      font-weight: 700;
+    }
+  }
+  .nike-video {
+    img {
+      width: 480px;
+      margin-left: 63px;
+    }
+  }
+  .mujik {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    background-image:none ;
+    .cachok-mujik,
+    img {
+      width: 450px;
+      height: 400px;
+    }
+    .kachok-text {
+      h1 {
+        font-size: 35px;
+      }
+      ul {
+        margin-left: 10px;
+      }
+    }
+  }
+  .article-span-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer-sylka {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    a{
+      font-size: 20px;
+    }
+  }
+  footer{
+    hr{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .profile-section {
+    width: 250px;
+    left: 230px;
+    top: 4545px;
+
+  }
+  .profile{
+    width: 400px;
+    div{
+      display: flex;
+      flex-wrap: wrap;
+    }
+   hr{
+    display: none;
+   }
+  }
+  .second-article{
+    width: 480px;
+  }
+  .designer{
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .Get-Started-Now{
+    width: 100%;
+    margin: 0px;
+    margin-top: 30px;
+  }
+}
