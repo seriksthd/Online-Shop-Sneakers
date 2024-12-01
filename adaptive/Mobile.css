@@ -14,9 +14,6 @@
     .top-button {
       display: none;
     }
-    .burger-menu {
-      display: block;
-    }
   }
   .continer-walk {
     display: none;
@@ -45,7 +42,6 @@
     p {
       font-weight: 400;
       width: 271px;
-      opacity: 0.7;
       line-height: 150%;
     }
   }
@@ -131,7 +127,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 30px;
-    background-image:none ;
+    background-image: none;
     .cachok-mujik,
     img {
       width: 450px;
@@ -154,12 +150,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    a{
+    a {
       font-size: 20px;
     }
   }
-  footer{
-    hr{
+  footer {
+    hr {
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -168,28 +164,68 @@
     width: 250px;
     left: 230px;
     top: 4545px;
-
   }
-  .profile{
+  .profile {
     width: 400px;
-    div{
+    div {
       display: flex;
       flex-wrap: wrap;
     }
-   hr{
-    display: none;
-   }
+    hr {
+      display: none;
+    }
   }
-  .second-article{
+  .second-article {
     width: 480px;
   }
-  .designer{
+  .designer {
     margin: 0px;
     margin-top: 30px;
   }
-  .Get-Started-Now{
+  .Get-Started-Now {
     width: 100%;
     margin: 0px;
     margin-top: 30px;
   }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background: #ffff;
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    background: #ffff;
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #212530;
+    width: 85%;
+    text-align: center;
+    transition: 0.3s;
+    padding-bottom: 100px;
+    img{
+      display: inline;
+    }
+  }
+  
+  a{
+    color: white;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+ 
 }
