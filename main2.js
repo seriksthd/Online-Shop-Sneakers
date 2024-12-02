@@ -42,7 +42,7 @@ document
     } else {
       if (email === storedUser.email && password === storedUser.password) {
         confirm("Добро пожаловать, " + storedUser.name + "!");
-        window.location.href = "index.html";
+        window.location.href = "index3.html";
       } else {
         document.getElementById("login-error").textContent =
           "Неверный email или пароль.";
