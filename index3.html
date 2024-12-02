@@ -1,238 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./adaptive/Mobile.css" />
-    <title>Online-Shop-Sneakers</title>
-    <script src="main.js" defer></script>
+    <title>Регистрация / Вход</title>
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <header>
-      <div class="top-set">
-        <section class="header-section">
-          <img src="./assets/icons/nike-logo.png" alt="nike logotype" />
-          <nav class="navbar">
-            <ul class="nav-menu">
-              <img class="ul-img" src="/assets/images/Vector.png" alt="naikelogo">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Praduct</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Review</a>
-              </li>
-              <button>SHOP NOW</button>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-          </nav>
-          <img
-            class="burger-menu"
-            src="./assets/icons/burger-menu.png"
-            alt=""
-          />
-        </section>
-        <article class="right-bar-head">
-          <section class="right-bar-box">
-            <div class="bring-row">
-              <h3>Bring power to your steps.</h3>
-              <img src="./assets/images/nike-logo-2.png" alt="" />
-            </div>
-            <h1 class="walk">Walk the line.</h1>
-            <p>
-              Now that you have a ready strategy to move forward, it’s time to
-              come up with some ideas.
-            </p>
-            <p class="continer-walk">
-              Now that you have a ready strategy to move forward,
-            </p>
-            <div class="left-price">
-              <p>Price : $125</p>
-              <span>$169</span>
-            </div>
-          </section>
-
-          <div class="low-block">
-            <div class="total-header-info">
-              <div class="duo-button">
-                <button class="button-duo">SHOP NOW</button>
-                <button class="button-duo">LEARN MORE</button>
-              </div>
-              <div class="container-low">
-                <div class="nth-1">
-                  <p>70k</p>
-                  <span>CUSTOMERS</span>
-                </div>
-                <div class="nth-2">
-                  <p>17k</p>
-                  <span>Review</span>
-                </div>
-              </div>
-            </div>
-
-            <img
-              class="three-sneakers"
-              src="./assets/images/three-sneakers.png"
-              alt=""
+    <div class="container">
+      <div class="form-container">
+        <div class="form-content">
+          <form id="login-form" class="form">
+            <h2>Войти</h2>
+            <input type="email" id="login-email" placeholder="Email" required />
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Пароль"
+              required
             />
-          </div>
-        </article>
-      </div>
-    </header>
-    <main>
-      <article class="second-article">
-        <div class="main-div1">
-          <h1>Our Latest Product</h1>
-          <p>
-            Now that you have a ready strategy to move forward, it’s time to
-            come up with some ideas.
-          </p>
+            <button type="submit">Войти</button>
+            <p class="toggle-text">
+              Нет аккаунта?
+              <span onclick="toggleForm()">Зарегистрироваться</span>
+            </p>
+            <p id="login-error" class="error-message"></p>
+          </form>
+
+          <form id="register-form" class="form hidden">
+            <h2>Регистрация</h2>
+            <input type="text" id="register-name" placeholder="Имя" required />
+            <input
+              type="email"
+              id="register-email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              id="register-password"
+              placeholder="Пароль"
+              required
+            />
+            <button type="submit">Зарегистрироваться</button>
+            <p class="toggle-text">
+              Уже есть аккаунт? <span onclick="toggleForm()">Войти</span>
+            </p>
+            <p id="register-error" class="error-message"></p>
+          </form>
         </div>
-        <section class="card-section">
-          <div class="card">
-            <div class="mini-card">
-              <img src="./assets/images/Group 29 (1).png" alt="sneak-photo" />
-              <p>Aliquam lobortis</p>
-              <img class="star" src="./assets/images/star.png" alt="star" />
-              <span>$75.00 – $85.00</span>
-            </div>
-            <button>SHOP NOW</button>
-          </div>
-          <div class="card">
-            <div class="mini-card">
-              <img src="./assets/images/Group 29.png" alt="sneak-photo" />
-              <p>FUSCE ALIQUAM</p>
-              <img class="star" src="./assets/images/star.png" alt="star" />
-              <span>$65.00 – $75.00</span>
-            </div>
-            <button>SHOP NOW</button>
-          </div>
-          <div class="card">
-            <div class="mini-card">
-              <img src="./assets/images/nike-cross.png" alt="sneak-photo" />
-              <p>AIR SUPERIORITY</p>
-              <img class="star" src="./assets/images/star.png" alt="star" />
-              <span>$35.00 – $45.00</span>
-            </div>
-            <button>SHOP NOW</button>
-          </div>
-        </section>
-        <section class="text-video">
-          <div class="box">
-            <div class="text">
-              <h1>Telling your story with videos</h1>
-              <p>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </p>
-            </div>
-          </div>
-          <div class="nike-video">
-            <img
-              class="nike-video2"
-              src="./assets/images/nike-video 5.png"
-              alt=""
-            />
-          </div>
-        </section>
-        <section class="mujik">
-          <div class="kachok-mujik">
-            <img src="/assets/images/manborder.png" alt="" />
-          </div>
-          <div class="kachok-text">
-            <h1>The best shoes for the best people</h1>
-            <ul>
-              <li>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </li>
-              <li>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </li>
-              <li>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </li>
-              <li>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="article-span">
-          <section class="article-span-section">
-            <div class="designer">
-              <div class="strelka">
-                <img
-                  class="tri-tochka"
-                  class="strelka"
-                  src="/assets/images/Group 24 (1).png"
-                  alt=""
-                />
-              </div>
-              <button>SHOP NOW</button>
-              <img src="/assets/images/Group 11.png" alt="" />
-            </div>
-            <div class="profile">
-              <h1>Greatest Reviews</h1>
-              <img class="profile1" src="/assets/images/Ellipse 2.png" alt="" />
-              <section>
-                <h2 class="h2">Shahriar Sohag</h2>
-                <b
-                  >Now that you have a ready strategy to move forward, it’s time
-                  to come up with some ideas.</b
-                >
-              </section>
-              <div>
-                <img class="profile2" src="/assets/images/star.png" alt="" />
-                <h2>UI Designer</h2>
-              </div>
-              <hr />
-            </div>
-            <section class="profile-section"></section>
-          </section>
-          <section class="Get-Started-Now">
-            <div class="Get-Started-Now-text">
-              <h1>Get Started Now</h1>
-              <p>
-                Now that you have a ready strategy to move forward, it’s time to
-                come up with some ideas.
-              </p>
-              <button>SUBESCRIBE</button>
-            </div>
-          </section>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <hr />
-      <div class="footer-sylka">
-        <span class="span-logo"
-          ><img src="/assets/images/Vector3.png" alt="logo"
-        /></span>
-        <span class="span-sylka">
-          <a href="#">Home</a>
-          <a href="#">Product</a>
-          <a href="#">About</a>
-          <a href="#">Review</a>
-        </span>
-        <span class="follow"><a href="#">Follow Us :</a></span>
-        <span><img src="/assets/images/Group 40.png" alt="insta" /></span>
       </div>
-      <div class="footer"></div>
-    </footer>
+    </div>
+    <script src="main2.js"></script>
   </body>
 </html>
